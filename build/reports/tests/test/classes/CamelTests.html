@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class CamelTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class CamelTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; CamelTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">7.121s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testGetTemperature</td>
+<td class="success">7.121s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>22:18:26.963 [Test worker] INFO CamelTests - ********************************************************************************
+22:18:26.980 [Test worker] INFO CamelTests - Testing: testGetTemperature(CamelTests)
+22:18:26.980 [Test worker] INFO CamelTests - ********************************************************************************
+22:18:26.981 [Test worker] DEBUG CamelTests - setUp test
+22:18:27.433 [Camel Thread #0 - LRUCacheFactory] DEBUG org.apache.camel.support.LRUCacheFactory - Warming up LRUCache ...
+22:18:27.602 [Camel Thread #0 - LRUCacheFactory] DEBUG org.apache.camel.support.LRUCacheFactory - Warming up LRUCache complete in 170 millis
+22:18:27.701 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@2c82fa22 to resolve component with name: properties
+22:18:27.714 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name properties in registry. Found: null
+22:18:27.715 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name properties-component in registry. Found: null
+22:18:27.803 [Test worker] DEBUG org.apache.camel.impl.DefaultComponentResolver - Found component: properties via type: org.apache.camel.component.properties.PropertiesComponent via: META-INF/services/org/apache/camel/component/properties
+22:18:27.931 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@2c82fa22 to resolve component with name: direct
+22:18:27.932 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name direct in registry. Found: null
+22:18:27.933 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name direct-component in registry. Found: null
+22:18:27.942 [Test worker] DEBUG org.apache.camel.impl.DefaultComponentResolver - Found component: direct via type: org.apache.camel.component.direct.DirectComponent via: META-INF/services/org/apache/camel/component/direct
+22:18:27.950 [Test worker] DEBUG org.apache.camel.component.direct.DirectComponent - Creating endpoint uri=[direct://getTemperature], path=[getTemperature]
+22:18:28.440 [Test worker] DEBUG org.apache.camel.impl.converter.AnnotationTypeConverterLoader - Loading file META-INF/services/org/apache/camel/TypeConverter to retrieve list of packages, from url: jar:file:/C:/Users/rybts/.gradle/caches/modules-2/files-2.1/org.apache.camel/camel-spring/3.0.0-M1/638b9ebb6f152247fec4e73a2d760f1e694dd3f4/camel-spring-3.0.0-M1.jar!/META-INF/services/org/apache/camel/TypeConverter
+22:18:28.442 [Test worker] DEBUG org.apache.camel.impl.converter.AnnotationTypeConverterLoader - Loading file META-INF/services/org/apache/camel/TypeConverter to retrieve list of packages, from url: jar:file:/C:/Users/rybts/.gradle/caches/modules-2/files-2.1/org.apache.camel/camel-http-common/3.0.0-M1/95c54ed33de25b28a956ae02efa32d51c2705b7a/camel-http-common-3.0.0-M1.jar!/META-INF/services/org/apache/camel/TypeConverter
+22:18:28.444 [Test worker] DEBUG org.apache.camel.impl.converter.AnnotationTypeConverterLoader - Loading file META-INF/services/org/apache/camel/TypeConverter to retrieve list of packages, from url: jar:file:/C:/Users/rybts/.gradle/caches/modules-2/files-2.1/org.apache.camel/camel-core/3.0.0-M1/942eccaf5666e9b2188d09f2c87d3883ee57265/camel-core-3.0.0-M1.jar!/META-INF/services/org/apache/camel/TypeConverter
+22:18:28.446 [Test worker] DEBUG org.apache.camel.impl.converter.AnnotationTypeConverterLoader - Loading file META-INF/services/org/apache/camel/TypeConverter to retrieve list of packages, from url: jar:file:/C:/Users/rybts/.gradle/caches/modules-2/files-2.1/org.apache.camel/camel-jackson/3.0.0-M1/a00740975f19370f80fe7d2f62459ec3d464636a/camel-jackson-3.0.0-M1.jar!/META-INF/services/org/apache/camel/TypeConverter
+22:18:28.448 [Test worker] DEBUG org.apache.camel.impl.converter.AnnotationTypeConverterLoader - Loading file META-INF/services/org/apache/camel/TypeConverter to retrieve list of packages, from url: jar:file:/C:/Users/rybts/.gradle/caches/modules-2/files-2.1/org.apache.camel/camel-file/3.0.0-M1/a4aec4c5735cf152a6a9c793515ee801481d4e4a/camel-file-3.0.0-M1.jar!/META-INF/services/org/apache/camel/TypeConverter
+22:18:28.450 [Test worker] DEBUG org.apache.camel.impl.converter.AnnotationTypeConverterLoader - Loading file META-INF/services/org/apache/camel/TypeConverter to retrieve list of packages, from url: jar:file:/C:/Users/rybts/.gradle/caches/modules-2/files-2.1/org.apache.camel/camel-support/3.0.0-M1/2ccd55661f7e76dea2c22896cb01c0c88647a4ee/camel-support-3.0.0-M1.jar!/META-INF/services/org/apache/camel/TypeConverter
+22:18:28.503 [Test worker] DEBUG org.apache.camel.impl.converter.AnnotationTypeConverterLoader - Loaded 6 @Converter classes
+22:18:28.609 [Test worker] DEBUG org.apache.camel.converter.jaxp.StaxConverter - StaxConverter pool size: 4
+22:18:28.626 [Test worker] INFO org.apache.camel.impl.converter.DefaultTypeConverter - Type converters loaded (core: 183, classpath: 21)
+22:18:28.647 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - direct://getTemperature converted to endpoint: direct://getTemperature by component: org.apache.camel.component.direct.DirectComponent@35aad8f4
+22:18:28.653 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@2c82fa22 to resolve component with name: mock
+22:18:28.654 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name mock in registry. Found: null
+22:18:28.655 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name mock-component in registry. Found: null
+22:18:28.662 [Test worker] DEBUG org.apache.camel.impl.DefaultComponentResolver - Found component: mock via type: org.apache.camel.component.mock.MockComponent via: META-INF/services/org/apache/camel/component/mock
+22:18:28.666 [Test worker] DEBUG org.apache.camel.component.mock.MockComponent - Creating endpoint uri=[mock://result], path=[result]
+22:18:28.681 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - mock://result converted to endpoint: mock://result by component: org.apache.camel.component.mock.MockComponent@1e12ff7f
+22:18:29.560 [Test worker] DEBUG CamelTests - Using created route builder: Routes: []
+22:18:29.561 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - Adding routes from builder: Routes: []
+22:18:29.884 [Test worker] INFO org.apache.camel.impl.DefaultCamelContext - Apache Camel 3.0.0-M1 (CamelContext: camel-1) is starting
+22:18:29.889 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - Using ClassResolver=org.apache.camel.impl.DefaultClassResolver@59d1e330, PackageScanClassResolver=org.apache.camel.impl.DefaultPackageScanClassResolver@3d23d35a, ApplicationContextClassLoader=null, RouteController=org.apache.camel.impl.DefaultRouteController@22f3e464
+22:18:29.889 [Test worker] INFO org.apache.camel.management.ManagedManagementStrategy - JMX is enabled
+22:18:30.336 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Starting JMX agent on server: com.sun.jmx.mbeanserver.JmxMBeanServer@4be84bf1
+22:18:30.586 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=context,name=&quot;camel-1&quot;
+22:18:30.587 [Test worker] DEBUG org.apache.camel.support.TimerListenerManager - Added TimerListener: org.apache.camel.management.mbean.ManagedCamelContext@4ac86edc
+22:18:30.587 [Test worker] DEBUG org.apache.camel.management.DefaultManagementLifecycleStrategy - Registering 10 pre registered services
+22:18:30.678 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultShutdownStrategy
+22:18:30.693 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name=&quot;properties&quot;
+22:18:30.723 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name=&quot;direct&quot;
+22:18:30.740 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultTypeConverter
+22:18:30.753 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=endpoints,name=&quot;direct://getTemperature&quot;
+22:18:30.757 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name=&quot;mock&quot;
+22:18:30.771 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=endpoints,name=&quot;mock://result&quot;
+22:18:30.777 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultRouteController
+22:18:30.783 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=health,name=&quot;camel-1&quot;
+22:18:30.787 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=routecontrollers,name=&quot;camel-1&quot;
+22:18:30.862 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultExecutorServiceManager
+22:18:31.013 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultInflightRepository
+22:18:31.041 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultAsyncProcessorAwaitManager
+22:18:31.062 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultRestRegistry
+22:18:31.067 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Language with name simple in registry. Found: null
+22:18:31.068 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Language with name simple-language in registry. Found: null
+22:18:31.102 [Test worker] DEBUG org.apache.camel.language.simple.SimpleLanguage - Simple language predicate/expression cache size: 1000
+22:18:31.128 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultRuntimeCamelCatalog
+22:18:31.153 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultEndpointRegistry
+22:18:31.168 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultTransformerRegistry
+22:18:31.184 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultValidatorRegistry
+22:18:31.212 [Test worker] DEBUG org.apache.camel.component.direct.DirectComponent - Resolving property placeholders on component: org.apache.camel.component.direct.DirectComponent@35aad8f4
+22:18:31.217 [Test worker] DEBUG org.apache.camel.component.mock.MockComponent - Resolving property placeholders on component: org.apache.camel.component.mock.MockComponent@1e12ff7f
+22:18:31.567 [Test worker] DEBUG org.apache.camel.processor.interceptor.DefaultChannel - Initialize channel for target: 'process[Processor@0x254ec951]'
+22:18:31.585 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=tracer,name=BacklogTracer
+22:18:31.612 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=tracer,name=BacklogDebugger
+22:18:31.693 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=errorhandlers,name=&quot;DefaultErrorHandlerBuilder(ref:CamelDefaultErrorHandlerBuilder)&quot;
+22:18:31.721 [Test worker] DEBUG org.apache.camel.processor.interceptor.DefaultChannel - Initialize channel for target: 'To[mock:result]'
+22:18:31.828 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@2c82fa22 to resolve component with name: rest
+22:18:31.829 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name rest in registry. Found: null
+22:18:31.830 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name rest-component in registry. Found: null
+22:18:31.837 [Test worker] DEBUG org.apache.camel.impl.DefaultComponentResolver - Found component: rest via type: org.apache.camel.component.rest.RestComponent via: META-INF/services/org/apache/camel/component/rest
+22:18:31.861 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name=&quot;rest&quot;
+22:18:31.862 [Test worker] DEBUG org.apache.camel.component.rest.RestComponent - Resolving property placeholders on component: org.apache.camel.component.rest.RestComponent@e4d23b6
+22:18:31.865 [Test worker] DEBUG org.apache.camel.component.rest.RestComponent - Creating endpoint uri=[rest://post:/temperature?routeId=route2], path=[post:/temperature]
+22:18:31.888 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - rest://post:/temperature?routeId=route2 converted to endpoint: rest://post:/temperature?routeId=route2 by component: org.apache.camel.component.rest.RestComponent@e4d23b6
+22:18:31.894 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=endpoints,name=&quot;rest://post:/temperature&quot;
+22:18:31.902 [Test worker] DEBUG org.apache.camel.processor.interceptor.DefaultChannel - Initialize channel for target: 'To[direct:getTemperature]'
+22:18:31.909 [Test worker] INFO org.apache.camel.impl.DefaultCamelContext - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+22:18:31.916 [Test worker] DEBUG org.apache.camel.impl.HeadersMapFactoryResolver - Creating default HeadersMapFactory
+22:18:31.918 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - Using HeadersMapFactory: org.apache.camel.impl.DefaultHeadersMapFactory@60240ebf
+22:18:31.921 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - Warming up route id: route1 having autoStartup=true
+22:18:31.924 [Test worker] DEBUG org.apache.camel.impl.RouteService - Starting services on route: route1
+22:18:31.934 [Test worker] DEBUG org.apache.camel.impl.RouteService - Starting child service on route: route1 -&gt; Pipeline[[Channel[DelegateSync[core.MainRoute$1@254ec951]], Channel[sendTo(mock://result)]]]
+22:18:31.954 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=producers,name=Producer(0x6dda369b)
+22:18:31.954 [Test worker] DEBUG org.apache.camel.component.mock.MockEndpoint$1 - Starting producer: Producer[mock://result]
+22:18:31.957 [Test worker] DEBUG org.apache.camel.impl.RouteService - Starting child service on route: route1 -&gt; Pipeline[[Channel[DelegateSync[core.MainRoute$1@254ec951]], Channel[sendTo(mock://result)]]]
+22:18:31.958 [Test worker] DEBUG org.apache.camel.impl.RouteService - Starting child service on route: route1 -&gt; DelegateSync[core.MainRoute$1@254ec951]
+22:18:32.058 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=processors,name=&quot;process1&quot;
+22:18:32.058 [Test worker] DEBUG org.apache.camel.impl.RouteService - Starting child service on route: route1 -&gt; Channel[DelegateSync[core.MainRoute$1@254ec951]]
+22:18:32.058 [Test worker] DEBUG org.apache.camel.impl.RouteService - Starting child service on route: route1 -&gt; sendTo(mock://result)
+22:18:32.078 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=processors,name=&quot;to1&quot;
+22:18:32.078 [Test worker] DEBUG org.apache.camel.impl.RouteService - Starting child service on route: route1 -&gt; Channel[sendTo(mock://result)]
+22:18:32.102 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=routes,name=&quot;route1&quot;
+22:18:32.103 [Test worker] DEBUG org.apache.camel.support.TimerListenerManager - Added TimerListener: org.apache.camel.management.mbean.ManagedSuspendableRoute@672a5419
+22:18:32.103 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - Warming up route id: route2 having autoStartup=true
+22:18:32.103 [Test worker] DEBUG org.apache.camel.impl.RouteService - Starting services on route: route2
+22:18:32.106 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@2c82fa22 to resolve component with name: coap
+22:18:32.107 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name coap in registry. Found: null
+22:18:32.107 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name coap-component in registry. Found: null
+22:18:32.111 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@2c82fa22 to resolve component with name: netty-http
+22:18:32.112 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name netty-http in registry. Found: null
+22:18:32.113 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name netty-http-component in registry. Found: null
+22:18:32.118 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@2c82fa22 to resolve component with name: netty4-http
+22:18:32.119 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name netty4-http in registry. Found: null
+22:18:32.121 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name netty4-http-component in registry. Found: null
+22:18:32.125 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@2c82fa22 to resolve component with name: jetty
+22:18:32.126 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name jetty in registry. Found: null
+22:18:32.127 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name jetty-component in registry. Found: null
+22:18:32.133 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@2c82fa22 to resolve component with name: restlet
+22:18:32.134 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name restlet in registry. Found: null
+22:18:32.135 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name restlet-component in registry. Found: null
+22:18:32.141 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@2c82fa22 to resolve component with name: servlet
+22:18:32.142 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name servlet in registry. Found: null
+22:18:32.145 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name servlet-component in registry. Found: null
+22:18:32.161 [Test worker] DEBUG org.apache.camel.impl.DefaultComponentResolver - Found component: servlet via type: org.apache.camel.component.servlet.ServletComponent via: META-INF/services/org/apache/camel/component/servlet
+22:18:32.197 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name=&quot;servlet&quot;
+22:18:32.199 [Test worker] DEBUG org.apache.camel.component.servlet.ServletComponent - Resolving property placeholders on component: org.apache.camel.component.servlet.ServletComponent@3982ead0
+22:18:32.206 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@2c82fa22 to resolve component with name: spark-java
+22:18:32.217 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name spark-java in registry. Found: null
+22:18:32.220 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name spark-java-component in registry. Found: null
+22:18:32.229 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@2c82fa22 to resolve component with name: undertow
+22:18:32.230 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name undertow in registry. Found: null
+22:18:32.231 [Test worker] DEBUG org.apache.camel.support.ResolverHelper - Lookup Component with name undertow-component in registry. Found: null
+22:18:32.238 [Test worker] DEBUG org.apache.camel.component.rest.RestEndpoint - Auto discovered servlet as RestConsumerFactory
+22:18:32.242 [Test worker] DEBUG org.apache.camel.component.servlet.ServletComponent - Creating endpoint uri=[servlet:///temperature?httpMethodRestrict=POST], path=[/temperature]
+22:18:32.251 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - servlet:///temperature?httpMethodRestrict=POST converted to endpoint: servlet:/temperature?httpMethodRestrict=POST by component: org.apache.camel.component.servlet.ServletComponent@3982ead0
+22:18:32.261 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=endpoints,name=&quot;servlet:/temperature\?httpMethodRestrict=POST&quot;
+22:18:32.280 [Test worker] DEBUG org.apache.camel.impl.RouteService - Starting child service on route: route2 -&gt; Channel[sendTo(direct://getTemperature)]
+22:18:32.288 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=producers,name=DirectProducer(0x3661dcfd)
+22:18:32.289 [Test worker] DEBUG org.apache.camel.component.direct.DirectProducer - Starting producer: Producer[direct://getTemperature]
+22:18:32.290 [Test worker] DEBUG org.apache.camel.impl.RouteService - Starting child service on route: route2 -&gt; sendTo(direct://getTemperature)
+22:18:32.305 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=processors,name=&quot;to2&quot;
+22:18:32.306 [Test worker] DEBUG org.apache.camel.impl.RouteService - Starting child service on route: route2 -&gt; Channel[sendTo(direct://getTemperature)]
+22:18:32.331 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=routes,name=&quot;route2&quot;
+22:18:32.331 [Test worker] DEBUG org.apache.camel.support.TimerListenerManager - Added TimerListener: org.apache.camel.management.mbean.ManagedSuspendableRoute@41cd0bdf
+22:18:32.332 [Test worker] DEBUG org.apache.camel.management.DefaultManagementLifecycleStrategy - Load performance statistics disabled
+22:18:32.335 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - Route: route1 &gt;&gt;&gt; EventDrivenConsumerRoute[direct://getTemperature -&gt; Pipeline[[Channel[DelegateSync[core.MainRoute$1@254ec951]], Channel[sendTo(mock://result)]]]]
+22:18:32.336 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - Starting consumer (order: 1000) on route: route1
+22:18:32.350 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=consumers,name=DirectConsumer(0x24b136d6)
+22:18:32.351 [Test worker] DEBUG org.apache.camel.component.direct.DirectConsumer - Starting consumer: Consumer[direct://getTemperature]
+22:18:32.353 [Test worker] INFO org.apache.camel.impl.DefaultCamelContext - Route: route1 started and consuming from: direct://getTemperature
+22:18:32.357 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - Route: route2 &gt;&gt;&gt; EventDrivenConsumerRoute[rest://post:/temperature?routeId=route2 -&gt; Channel[sendTo(direct://getTemperature)]]
+22:18:32.357 [Test worker] DEBUG org.apache.camel.impl.DefaultCamelContext - Starting consumer (order: 1001) on route: route2
+22:18:32.362 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=consumers,name=ServletConsumer(0x8f2968)
+22:18:32.363 [Test worker] DEBUG org.apache.camel.component.servlet.ServletConsumer - Starting consumer: Consumer[servlet:/temperature?httpMethodRestrict=POST]
+22:18:32.366 [Test worker] DEBUG org.apache.camel.component.servlet.DefaultHttpRegistry - Registering consumer for path /temperature providers present: 0
+22:18:32.367 [Test worker] INFO org.apache.camel.impl.DefaultCamelContext - Route: route2 started and consuming from: servlet:/temperature?httpMethodRestrict=POST
+22:18:32.368 [Test worker] INFO org.apache.camel.impl.DefaultCamelContext - Total 2 routes, of which 2 are started
+22:18:32.375 [Test worker] INFO org.apache.camel.impl.DefaultCamelContext - Apache Camel 3.0.0-M1 (CamelContext: camel-1) started in 2.485 seconds
+22:18:32.380 [Test worker] DEBUG CamelTests - Routing Rules are: [EventDrivenConsumerRoute[direct://getTemperature -&gt; Pipeline[[Channel[DelegateSync[core.MainRoute$1@254ec951]], Channel[sendTo(mock://result)]]]], EventDrivenConsumerRoute[rest://post:/temperature?routeId=route2 -&gt; Channel[sendTo(direct://getTemperature)]]]
+22:18:32.599 [Test worker] DEBUG org.apache.camel.component.direct.DirectProducer - Starting producer: Producer[direct://getTemperature]
+22:18:32.599 [Test worker] DEBUG org.apache.camel.impl.DefaultProducerCache - &gt;&gt;&gt;&gt; direct://getTemperature Exchange[]
+22:18:32.648 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Step[ID-LAPTOP-GPVJ8JJD-1597691912625-0-1,DefaultErrorHandler[DelegateSync[core.MainRoute$1@254ec951]]]
+22:18:32.650 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: CamelInternalProcessor - UnitOfWork - afterProcess - DefaultErrorHandler[DelegateSync[core.MainRoute$1@254ec951]] - ID-LAPTOP-GPVJ8JJD-1597691912625-0-1
+22:18:32.824 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.CamelInternalProcessor$$Lambda$182/357439204@11dd0973]
+22:18:32.825 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.Pipeline$$Lambda$185/2129235208@a4120c4]
+22:18:32.829 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Step[ID-LAPTOP-GPVJ8JJD-1597691912625-0-1,Pipeline[[Channel[DelegateSync[core.MainRoute$1@254ec951]], Channel[sendTo(mock://result)]]]]
+22:18:32.831 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Step[ID-LAPTOP-GPVJ8JJD-1597691912625-0-1,DefaultErrorHandler[sendTo(mock://result)]]
+22:18:32.832 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: CamelInternalProcessor - UnitOfWork - afterProcess - DefaultErrorHandler[sendTo(mock://result)] - ID-LAPTOP-GPVJ8JJD-1597691912625-0-1
+22:18:32.832 [Test worker] DEBUG org.apache.camel.processor.SendProcessor - &gt;&gt;&gt;&gt; mock://result Exchange[ID-LAPTOP-GPVJ8JJD-1597691912625-0-1]
+22:18:32.841 [Test worker] DEBUG org.apache.camel.component.mock.MockEndpoint - mock://result &gt;&gt;&gt;&gt; 0 : Exchange[ID-LAPTOP-GPVJ8JJD-1597691912625-0-1] with body: error: invalid JSON
+22:18:32.842 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.CamelInternalProcessor$$Lambda$182/357439204@27be2e7f]
+22:18:32.842 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.Pipeline$$Lambda$185/2129235208@6d69fd6b]
+22:18:32.842 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Step[ID-LAPTOP-GPVJ8JJD-1597691912625-0-1,Pipeline[[Channel[DelegateSync[core.MainRoute$1@254ec951]], Channel[sendTo(mock://result)]]]]
+22:18:32.843 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.CamelInternalProcessor$$Lambda$182/357439204@9f6c17c]
+22:18:32.843 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.SharedCamelInternalProcessor$InternalCallback@4f49ab56]
+22:18:32.846 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.impl.DefaultAsyncProcessorAwaitManager$$Lambda$179/502931706@4b046c1]
+22:18:32.852 [Test worker] DEBUG org.apache.camel.impl.DefaultProducerCache - &gt;&gt;&gt;&gt; direct://getTemperature Exchange[]
+22:18:32.853 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Step[ID-LAPTOP-GPVJ8JJD-1597691912625-0-3,DefaultErrorHandler[DelegateSync[core.MainRoute$1@254ec951]]]
+22:18:32.854 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: CamelInternalProcessor - UnitOfWork - afterProcess - DefaultErrorHandler[DelegateSync[core.MainRoute$1@254ec951]] - ID-LAPTOP-GPVJ8JJD-1597691912625-0-3
+22:18:32.855 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.CamelInternalProcessor$$Lambda$182/357439204@1458afde]
+22:18:32.855 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.Pipeline$$Lambda$185/2129235208@1bd4163a]
+22:18:32.855 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Step[ID-LAPTOP-GPVJ8JJD-1597691912625-0-3,Pipeline[[Channel[DelegateSync[core.MainRoute$1@254ec951]], Channel[sendTo(mock://result)]]]]
+22:18:32.856 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Step[ID-LAPTOP-GPVJ8JJD-1597691912625-0-3,DefaultErrorHandler[sendTo(mock://result)]]
+22:18:32.856 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: CamelInternalProcessor - UnitOfWork - afterProcess - DefaultErrorHandler[sendTo(mock://result)] - ID-LAPTOP-GPVJ8JJD-1597691912625-0-3
+22:18:32.856 [Test worker] DEBUG org.apache.camel.processor.SendProcessor - &gt;&gt;&gt;&gt; mock://result Exchange[ID-LAPTOP-GPVJ8JJD-1597691912625-0-3]
+22:18:32.857 [Test worker] DEBUG org.apache.camel.component.mock.MockEndpoint - mock://result &gt;&gt;&gt;&gt; 1 : Exchange[ID-LAPTOP-GPVJ8JJD-1597691912625-0-3] with body: error: empty message
+22:18:32.857 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.CamelInternalProcessor$$Lambda$182/357439204@723c57a0]
+22:18:32.858 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.Pipeline$$Lambda$185/2129235208@472e5c09]
+22:18:32.858 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Step[ID-LAPTOP-GPVJ8JJD-1597691912625-0-3,Pipeline[[Channel[DelegateSync[core.MainRoute$1@254ec951]], Channel[sendTo(mock://result)]]]]
+22:18:32.858 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.CamelInternalProcessor$$Lambda$182/357439204@16593d6d]
+22:18:32.859 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.SharedCamelInternalProcessor$InternalCallback@2d878c5a]
+22:18:32.860 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.impl.DefaultAsyncProcessorAwaitManager$$Lambda$179/502931706@3d965f1d]
+22:18:32.861 [Test worker] DEBUG org.apache.camel.impl.DefaultProducerCache - &gt;&gt;&gt;&gt; direct://getTemperature Exchange[]
+22:18:32.862 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Step[ID-LAPTOP-GPVJ8JJD-1597691912625-0-5,DefaultErrorHandler[DelegateSync[core.MainRoute$1@254ec951]]]
+22:18:32.863 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: CamelInternalProcessor - UnitOfWork - afterProcess - DefaultErrorHandler[DelegateSync[core.MainRoute$1@254ec951]] - ID-LAPTOP-GPVJ8JJD-1597691912625-0-5
+22:18:33.049 [Test worker] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://api.openweathermap.org/data/2.5/weather?lat=20asd&amp;lon=20&amp;appid=6a22a3b190640923d4a1b14c0e9949fe
+22:18:33.087 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Accept=[text/plain, application/json, application/*+json, */*]
+22:18:33.637 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Response 400 BAD_REQUEST
+22:18:33.715 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.CamelInternalProcessor$$Lambda$182/357439204@3df72b89]
+22:18:33.716 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.Pipeline$$Lambda$185/2129235208@60fa2789]
+22:18:33.716 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Step[ID-LAPTOP-GPVJ8JJD-1597691912625-0-5,Pipeline[[Channel[DelegateSync[core.MainRoute$1@254ec951]], Channel[sendTo(mock://result)]]]]
+22:18:33.716 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Step[ID-LAPTOP-GPVJ8JJD-1597691912625-0-5,DefaultErrorHandler[sendTo(mock://result)]]
+22:18:33.716 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: CamelInternalProcessor - UnitOfWork - afterProcess - DefaultErrorHandler[sendTo(mock://result)] - ID-LAPTOP-GPVJ8JJD-1597691912625-0-5
+22:18:33.717 [Test worker] DEBUG org.apache.camel.processor.SendProcessor - &gt;&gt;&gt;&gt; mock://result Exchange[ID-LAPTOP-GPVJ8JJD-1597691912625-0-5]
+22:18:33.718 [Test worker] DEBUG org.apache.camel.component.mock.MockEndpoint - mock://result &gt;&gt;&gt;&gt; 2 : Exchange[ID-LAPTOP-GPVJ8JJD-1597691912625-0-5] with body: error: could not get weather data
+22:18:33.718 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.CamelInternalProcessor$$Lambda$182/357439204@14384925]
+22:18:33.719 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.Pipeline$$Lambda$185/2129235208@22b5ba91]
+22:18:33.719 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Step[ID-LAPTOP-GPVJ8JJD-1597691912625-0-5,Pipeline[[Channel[DelegateSync[core.MainRoute$1@254ec951]], Channel[sendTo(mock://result)]]]]
+22:18:33.719 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.CamelInternalProcessor$$Lambda$182/357439204@261a762d]
+22:18:33.719 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.SharedCamelInternalProcessor$InternalCallback@176ddb08]
+22:18:33.720 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.impl.DefaultAsyncProcessorAwaitManager$$Lambda$179/502931706@41cad9a1]
+22:18:33.720 [Test worker] DEBUG org.apache.camel.impl.DefaultProducerCache - &gt;&gt;&gt;&gt; direct://getTemperature Exchange[]
+22:18:33.721 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Step[ID-LAPTOP-GPVJ8JJD-1597691912625-0-7,DefaultErrorHandler[DelegateSync[core.MainRoute$1@254ec951]]]
+22:18:33.722 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: CamelInternalProcessor - UnitOfWork - afterProcess - DefaultErrorHandler[DelegateSync[core.MainRoute$1@254ec951]] - ID-LAPTOP-GPVJ8JJD-1597691912625-0-7
+22:18:33.726 [Test worker] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://api.openweathermap.org/data/2.5/weather?lat=20&amp;lon=20&amp;appid=6a22a3b190640923d4a1b14c0e9949fe
+22:18:33.727 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Accept=[text/plain, application/json, application/*+json, */*]
+22:18:33.824 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+22:18:33.827 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading to [java.lang.String] as &quot;application/json;charset=utf-8&quot;
+22:18:33.887 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.CamelInternalProcessor$$Lambda$182/357439204@57b484da]
+22:18:33.887 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.Pipeline$$Lambda$185/2129235208@21145e02]
+22:18:33.887 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Step[ID-LAPTOP-GPVJ8JJD-1597691912625-0-7,Pipeline[[Channel[DelegateSync[core.MainRoute$1@254ec951]], Channel[sendTo(mock://result)]]]]
+22:18:33.887 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Step[ID-LAPTOP-GPVJ8JJD-1597691912625-0-7,DefaultErrorHandler[sendTo(mock://result)]]
+22:18:33.888 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: CamelInternalProcessor - UnitOfWork - afterProcess - DefaultErrorHandler[sendTo(mock://result)] - ID-LAPTOP-GPVJ8JJD-1597691912625-0-7
+22:18:33.888 [Test worker] DEBUG org.apache.camel.processor.SendProcessor - &gt;&gt;&gt;&gt; mock://result Exchange[ID-LAPTOP-GPVJ8JJD-1597691912625-0-7]
+22:18:33.889 [Test worker] DEBUG org.apache.camel.component.mock.MockEndpoint - mock://result &gt;&gt;&gt;&gt; 3 : Exchange[ID-LAPTOP-GPVJ8JJD-1597691912625-0-7] with body: OK
+22:18:33.889 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.CamelInternalProcessor$$Lambda$182/357439204@6352a3f]
+22:18:33.890 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.Pipeline$$Lambda$185/2129235208@4f64d1de]
+22:18:33.890 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Step[ID-LAPTOP-GPVJ8JJD-1597691912625-0-7,Pipeline[[Channel[DelegateSync[core.MainRoute$1@254ec951]], Channel[sendTo(mock://result)]]]]
+22:18:33.890 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.CamelInternalProcessor$$Lambda$182/357439204@3c850ebc]
+22:18:33.891 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.processor.SharedCamelInternalProcessor$InternalCallback@3f62b360]
+22:18:33.891 [Test worker] DEBUG org.apache.camel.support.ReactiveHelper - Queuing reactive work: Callback[org.apache.camel.impl.DefaultAsyncProcessorAwaitManager$$Lambda$179/502931706@10a91261]
+22:18:33.892 [Test worker] INFO org.apache.camel.component.mock.MockEndpoint - Asserting: mock://result is satisfied
+22:18:33.893 [Test worker] INFO CamelTests - ********************************************************************************
+22:18:33.893 [Test worker] INFO CamelTests - Testing done: testGetTemperature(CamelTests)
+22:18:33.894 [Test worker] INFO CamelTests - Took: 1.513 seconds (1513 millis)
+22:18:33.894 [Test worker] INFO CamelTests - ********************************************************************************
+22:18:33.894 [Test worker] DEBUG org.apache.camel.test.junit4.CamelTestSupport - tearDown test
+22:18:33.897 [Test worker] INFO org.apache.camel.impl.DefaultCamelContext - Apache Camel 3.0.0-M1 (CamelContext: camel-1) is shutting down
+22:18:33.905 [Test worker] INFO org.apache.camel.impl.DefaultShutdownStrategy - Starting to graceful shutdown 2 routes (timeout 10 seconds)
+22:18:33.934 [Test worker] DEBUG org.apache.camel.impl.DefaultExecutorServiceManager - Created new ThreadPool for source: org.apache.camel.impl.DefaultShutdownStrategy@4760dd39 with name: ShutdownTask. -&gt; org.apache.camel.util.concurrent.RejectableThreadPoolExecutor@428898d8[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0][ShutdownTask]
+22:18:33.942 [Camel (camel-1) thread #1 - ShutdownTask] DEBUG org.apache.camel.impl.DefaultShutdownStrategy - There are 2 routes to shutdown
+22:18:33.945 [Camel (camel-1) thread #1 - ShutdownTask] DEBUG org.apache.camel.impl.DefaultShutdownStrategy - Route: route2 suspended and shutdown deferred, was consuming from: rest://post:/temperature?routeId=route2
+22:18:33.946 [Camel (camel-1) thread #1 - ShutdownTask] DEBUG org.apache.camel.impl.DefaultShutdownStrategy - Route: route1 suspension deferred.
+22:18:33.947 [Camel (camel-1) thread #1 - ShutdownTask] DEBUG org.apache.camel.impl.DefaultShutdownStrategy - Route: route1 preparing to shutdown complete.
+22:18:33.948 [Camel (camel-1) thread #1 - ShutdownTask] DEBUG org.apache.camel.component.servlet.DefaultHttpRegistry - Unregistering consumer for path /temperature
+22:18:33.949 [Camel (camel-1) thread #1 - ShutdownTask] DEBUG org.apache.camel.component.servlet.ServletConsumer - Stopping consumer: Consumer[servlet:/temperature?httpMethodRestrict=POST]
+22:18:33.953 [Camel (camel-1) thread #1 - ShutdownTask] DEBUG org.apache.camel.component.direct.DirectProducer - Stopping producer: Producer[direct://getTemperature]
+22:18:33.955 [Camel (camel-1) thread #1 - ShutdownTask] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=producers,name=DirectProducer(0x3661dcfd)
+22:18:33.956 [Camel (camel-1) thread #1 - ShutdownTask] INFO org.apache.camel.impl.DefaultShutdownStrategy - Route: route2 shutdown complete, was consuming from: servlet:/temperature?httpMethodRestrict=POST
+22:18:33.957 [Camel (camel-1) thread #1 - ShutdownTask] DEBUG org.apache.camel.component.direct.DirectConsumer - Stopping consumer: Consumer[direct://getTemperature]
+22:18:33.958 [Camel (camel-1) thread #1 - ShutdownTask] DEBUG org.apache.camel.component.mock.MockEndpoint$1 - Stopping producer: Producer[mock://result]
+22:18:33.959 [Camel (camel-1) thread #1 - ShutdownTask] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=producers,name=Producer(0x6dda369b)
+22:18:33.960 [Camel (camel-1) thread #1 - ShutdownTask] INFO org.apache.camel.impl.DefaultShutdownStrategy - Route: route1 shutdown complete, was consuming from: direct://getTemperature
+22:18:33.962 [Test worker] INFO org.apache.camel.impl.DefaultShutdownStrategy - Graceful shutdown of 2 routes completed in 0 seconds
+22:18:33.963 [Test worker] DEBUG org.apache.camel.impl.DefaultAsyncProcessorAwaitManager - Shutting down with no inflight threads.
+22:18:33.965 [Test worker] DEBUG org.apache.camel.support.TimerListenerManager - Removed TimerListener: org.apache.camel.management.mbean.ManagedSuspendableRoute@41cd0bdf
+22:18:33.966 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=routes,name=&quot;route2&quot;
+22:18:33.968 [Test worker] DEBUG org.apache.camel.impl.RouteService - Stopping services on route: route2
+22:18:33.969 [Test worker] DEBUG org.apache.camel.impl.RouteService - Shutting down child service on route: route2 -&gt; Consumer[servlet:/temperature?httpMethodRestrict=POST]
+22:18:33.970 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=consumers,name=ServletConsumer(0x8f2968)
+22:18:33.970 [Test worker] DEBUG org.apache.camel.impl.RouteService - Shutting down child service on route: route2 -&gt; Channel[sendTo(direct://getTemperature)]
+22:18:33.971 [Test worker] DEBUG org.apache.camel.impl.RouteService - Shutting down child service on route: route2 -&gt; sendTo(direct://getTemperature)
+22:18:33.971 [Test worker] DEBUG org.apache.camel.impl.RouteService - Shutting down child service on route: route2 -&gt; Channel[sendTo(direct://getTemperature)]
+22:18:33.974 [Test worker] DEBUG org.apache.camel.impl.RouteService - Shutting down services on route: route2
+22:18:33.980 [Test worker] DEBUG org.apache.camel.support.TimerListenerManager - Removed TimerListener: org.apache.camel.management.mbean.ManagedSuspendableRoute@672a5419
+22:18:33.981 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=routes,name=&quot;route1&quot;
+22:18:33.981 [Test worker] DEBUG org.apache.camel.impl.RouteService - Stopping services on route: route1
+22:18:33.982 [Test worker] DEBUG org.apache.camel.impl.RouteService - Shutting down child service on route: route1 -&gt; Consumer[direct://getTemperature]
+22:18:33.982 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=consumers,name=DirectConsumer(0x24b136d6)
+22:18:33.983 [Test worker] DEBUG org.apache.camel.impl.RouteService - Shutting down child service on route: route1 -&gt; Pipeline[[Channel[DelegateSync[core.MainRoute$1@254ec951]], Channel[sendTo(mock://result)]]]
+22:18:33.983 [Test worker] DEBUG org.apache.camel.impl.RouteService - Shutting down child service on route: route1 -&gt; Pipeline[[Channel[DelegateSync[core.MainRoute$1@254ec951]], Channel[sendTo(mock://result)]]]
+22:18:33.984 [Test worker] DEBUG org.apache.camel.impl.RouteService - Shutting down child service on route: route1 -&gt; DelegateSync[core.MainRoute$1@254ec951]
+22:18:33.984 [Test worker] DEBUG org.apache.camel.impl.RouteService - Shutting down child service on route: route1 -&gt; Channel[DelegateSync[core.MainRoute$1@254ec951]]
+22:18:33.984 [Test worker] DEBUG org.apache.camel.impl.RouteService - Shutting down child service on route: route1 -&gt; sendTo(mock://result)
+22:18:33.984 [Test worker] DEBUG org.apache.camel.impl.RouteService - Shutting down child service on route: route1 -&gt; Channel[sendTo(mock://result)]
+22:18:33.985 [Test worker] DEBUG org.apache.camel.impl.RouteService - Shutting down services on route: route1
+22:18:33.990 [Test worker] DEBUG org.apache.camel.language.simple.SimpleLanguage - Clearing simple language predicate cache[size=0, hits=0, misses=0, evicted=0]
+22:18:33.990 [Test worker] DEBUG org.apache.camel.language.simple.SimpleLanguage - Clearing simple language expression cache[size=0, hits=0, misses=0, evicted=0]
+22:18:33.991 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=routecontrollers,name=&quot;camel-1&quot;
+22:18:33.991 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=health,name=&quot;camel-1&quot;
+22:18:33.992 [Test worker] DEBUG org.apache.camel.support.TimerListenerManager - Removed TimerListener: org.apache.camel.management.mbean.ManagedCamelContext@9b6ad30
+22:18:33.992 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=context,name=&quot;camel-1&quot;
+22:18:33.995 [Test worker] DEBUG org.apache.camel.component.direct.DirectProducer - Stopping producer: Producer[direct://getTemperature]
+22:18:34.001 [Test worker] DEBUG org.apache.camel.impl.DefaultInflightRepository - Shutting down with no inflight exchanges.
+22:18:34.003 [Test worker] DEBUG org.apache.camel.impl.DefaultExecutorServiceManager - Forcing shutdown of ExecutorService: org.apache.camel.util.concurrent.RejectableThreadPoolExecutor@428898d8[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1][ShutdownTask]
+22:18:34.008 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name=&quot;rest&quot;
+22:18:34.008 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=processors,name=&quot;process1&quot;
+22:18:34.009 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name=&quot;properties&quot;
+22:18:34.011 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultEndpointRegistry
+22:18:34.012 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name=&quot;servlet&quot;
+22:18:34.013 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=processors,name=&quot;to2&quot;
+22:18:34.013 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultRuntimeCamelCatalog
+22:18:34.013 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultValidatorRegistry
+22:18:34.014 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultInflightRepository
+22:18:34.015 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=endpoints,name=&quot;servlet:/temperature\?httpMethodRestrict=POST&quot;
+22:18:34.015 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=endpoints,name=&quot;rest://post:/temperature&quot;
+22:18:34.016 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultTypeConverter
+22:18:34.017 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultExecutorServiceManager
+22:18:34.017 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=errorhandlers,name=&quot;DefaultErrorHandlerBuilder(ref:CamelDefaultErrorHandlerBuilder)&quot;
+22:18:34.018 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=processors,name=&quot;to1&quot;
+22:18:34.018 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultRouteController
+22:18:34.018 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=tracer,name=BacklogTracer
+22:18:34.019 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=endpoints,name=&quot;direct://getTemperature&quot;
+22:18:34.019 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultTransformerRegistry
+22:18:34.019 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultAsyncProcessorAwaitManager
+22:18:34.019 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=tracer,name=BacklogDebugger
+22:18:34.020 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultShutdownStrategy
+22:18:34.020 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name=&quot;direct&quot;
+22:18:34.020 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultRestRegistry
+22:18:34.021 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=endpoints,name=&quot;mock://result&quot;
+22:18:34.021 [Test worker] DEBUG org.apache.camel.management.DefaultManagementAgent - Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name=&quot;mock&quot;
+22:18:34.021 [Test worker] DEBUG org.apache.camel.management.MBeanInfoAssembler - Clearing cache[size=17, hits=10, misses=25, evicted=8]
+22:18:34.040 [Test worker] DEBUG org.apache.camel.support.IntrospectionSupport - Clearing cache[size=55, hits=84, misses=80, evicted=25]
+22:18:34.070 [Test worker] INFO org.apache.camel.impl.DefaultCamelContext - Apache Camel 3.0.0-M1 (CamelContext: camel-1) uptime 4.187 seconds
+22:18:34.071 [Test worker] INFO org.apache.camel.impl.DefaultCamelContext - Apache Camel 3.0.0-M1 (CamelContext: camel-1) is shutdown in 0.173 seconds
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.3</a> at 17.08.2020 22:18:34</p>
+</div>
+</div>
+</body>
+</html>

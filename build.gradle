@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.3.2.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+}
+
+group 'ru.alan-fish'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.3.2.RELEASE'
+    compile group: 'org.apache.camel', name: 'camel-spring-boot-starter', version: '3.0.0-M1'
+    compile group: 'org.apache.camel', name: 'camel-servlet-starter', version: '3.0.0-M1'
+    testCompile group: 'org.apache.camel', name: 'camel-jackson', version: '3.0.0-M1'
+    compile group: 'org.apache.camel', name: 'camel-core', version: '3.0.0-M1'
+    compile group: 'org.apache.camel', name: 'camel-jms', version: '3.0.0-M1'
+    testCompile group: 'org.apache.camel', name: 'camel-jaxb', version: '3.0.0-M1'
+    compile group: 'org.apache.camel', name: 'camel-jackson-starter', version: '3.0.0-M1'
+    compile group: 'com.fasterxml.jackson.module', name: 'jackson-module-jaxb-annotations', version: '2.11.2'
+    //testCompile group: 'org.apache.camel', name: 'camel-test-spring', version: '3.0.0-M1'
+    testCompile group: 'org.apache.camel', name: 'camel-test', version: '3.0.0-M1'
+    implementation 'junit:junit:4.12'
+
+}
